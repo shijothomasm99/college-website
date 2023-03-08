@@ -137,6 +137,6 @@
 }
 @media(max-width:767px){
   .carousel-item img{
-    height: 200px;
+    height: 300px;
   }
 }
