@@ -135,3 +135,8 @@
 .margin-toppest{
   margin-top: 150px;
 }
+@media(max-width:767px){
+  .carousel-item img{
+    height: 300px;
+  }
+}
