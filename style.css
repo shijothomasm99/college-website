@@ -120,12 +120,13 @@
 .margin-top{
   margin-top: 100px;
 }
+.margin-bottom{
+  margin-bottom: 100px;
+}
 .height{
   height: 400px;
 }
-.admin-footer{
-  margin-top: 100px;
-}
+
 .staff-form-box, .student-form-box{
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
@@ -142,4 +143,20 @@
   .carousel-heading{
     display: none;
   }
+}
+@media(max-width:768px){
+  .feature-item{
+    margin-bottom: 50px;
+  }
+  #features .row:nth-child(2){
+    margin-bottom: 0px;
+  }
+}
+
+#features i:hover{
+  color: #003f88;
+}
+
+.nav-item a{
+  color: #003f88;
 }
