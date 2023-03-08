@@ -139,4 +139,7 @@
   .carousel-item img{
     height: 440px;
   }
+  .carousel-heading{
+    display: none;
+  }
 }
