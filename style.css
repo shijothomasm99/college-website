@@ -1,0 +1,137 @@
+.login{
+  margin-left: 570px;
+}
+.navbar-brand img{
+  cursor: pointer;
+}
+
+
+@media (max-width:992px) {
+  .login{
+    margin-left: 0px;
+  }
+}
+
+/* Carousel Heading */
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
+
+.div-1,.div-2{
+  display:inline-block;
+  overflow:hidden;
+  white-space:nowrap;
+  
+}
+
+.div-1{    /* For increasing performance 
+                       ID/Class should've been used. 
+                       For a small demo 
+                       it's okaish for now */
+  animation: showup 7s infinite;
+}
+
+.div-2 {
+  width:0px;
+  animation: reveal 7s infinite;
+}
+
+.div-2 span {
+  margin-left:-355px;
+  animation: slidein 7s infinite;
+}
+
+@keyframes showup {
+    0% {opacity:0;}
+    20% {opacity:1;}
+    80% {opacity:1;}
+    100% {opacity:0;}
+}
+
+@keyframes slidein {
+    0% { margin-left:-800px; }
+    20% { margin-left:-800px; }
+    35% { margin-left:0px; }
+    100% { margin-left:0px; }
+}
+
+@keyframes reveal {
+    0% {opacity:0;width:0px;}
+    20% {opacity:1;width:0px;}
+    30% {width:355px;}
+    80% {opacity:1;}
+    100% {opacity:0;width:355px;}
+}
+
+
+ .carousel-heading p {
+ 
+  color:#fff;
+}
+.carousel-heading{
+  margin-left: 4rem;
+}
+
+.footer i:hover{
+  color: #003f88;
+  cursor: pointer;
+}
+.carousel-div{
+  padding-top: px;
+}
+
+@media (max-width:768px){
+  .navbar-brand img{
+    height: 70px;
+  }
+}
+@media (min-width:993px){
+  .navbar-nav{
+    margin-left: -150px;
+  }
+}
+@media (min-width:1147px){
+  .navbar-nav{
+    margin-left: -60px;
+  }
+}
+@media (min-width:1200px){
+  .navbar-nav{
+    margin-left: 60px;
+  }
+}
+@media (max-width:992px){
+  .navbar-nav{
+    margin-left: 280px;
+  }
+}
+@media (max-width:905px){
+  .navbar-nav{
+    margin-left: 180px;
+  }
+}
+@media (min-width:1400px){
+  .navbar-nav{
+    margin-left: 250px;
+  }
+}
+.home{
+  margin-right: -210px;
+}
+.margin-top{
+  margin-top: 100px;
+}
+.height{
+  height: 400px;
+}
+.admin-footer{
+  margin-top: 100px;
+}
+.staff-form-box, .student-form-box{
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.navbar-brand h6{
+  cursor: pointer;
+}
+.margin-toppest{
+  margin-top: 150px;
+}

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Al-Ameen College of Engineering</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Dropdown hover required files -->
+  <style>
+    .dropdown-hover:hover .dropdown-menu {
+      display: block;
+    }
+  </style>
+  <script>
+    var dropdownHoverList = [].slice.call(document.querySelectorAll('.dropdown-hover'));
+    dropdownHoverList.map(function (dropdownHoverEl) {
+      dropdownHoverEl.addEventListener('mouseenter', function () {
+        dropdownHoverEl.classList.add('show');
+        dropdownHoverEl.querySelector('.dropdown-menu').classList.add('show');
+      });
+
+      dropdownHoverEl.addEventListener('mouseleave', function () {
+        dropdownHoverEl.classList.remove('show');
+        dropdownHoverEl.querySelector('.dropdown-menu').classList.remove('show');
+      });
+    });
+  </script>
+
+  <!-- Font awesome -->
+  <script src="https://kit.fontawesome.com/a74266306a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md bg-light position-fixed z-3 start-0 end-0 top-0">
+      <div class="container">
+        <div class="home navbar-brand" href="#">
+          <img src="images/brandlogo.png" class="w-75 my-auto" alt="brand logo">
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse login " id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item dropdown dropdown-hover">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-hover="dropdown" aria-expanded="false">
+                Login
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="admin.html">Admin</a></li>
+                <li><a class="dropdown-item" href="staff.html">Staff</a></li>
+                <li><a class="dropdown-item" href="student.html">Student</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Carousel -->
+  <div class="carousel-div container-fluid ">
+    <div id="carouselExampleControls" class="carousel slide margin-top" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/slider-1.jpg" class="d-block w-100" alt="..." height="600px">
+        </div>
+        <div class="carousel-item">
+          <img src="images/slider-2.jpg" class="d-block w-100" alt="..." height="600px">
+        </div>
+        <div class="carousel-item">
+          <img src="images/slider-3.jpg" class="d-block w-100" alt="..." height="600px">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <!-- Carousal Heading -->
+  <div class="carousel-heading position-absolute top-50 ">
+    <div class="div-1 fs-1">
+      <p>Explore</p>
+    </div>
+    <div class="div-2">
+      <span class="fs-2">
+        <p> into amazing experiences..</p>
+      </span>
+    </div>
+  </div>
+
+  <!-- Featured Programs -->
+  <section id="featured-programs">
+    <div class="container mb-5">
+      <h2 class="text-center mb-5 mt-5">Featured Programs</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="images/electronics.jpg" class="card-img-top" alt="Program 1">
+            <div class="card-body">
+              <h5 class="card-title">Electronics Engineering</h5>
+              <p class="card-text">Electronics engineering involves designing and developing electronic circuits and
+                devices.</p>
+              <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="images/computer.png" class="card-img-top" alt="Program 2">
+            <div class="card-body">
+              <h5 class="card-title">Computer Science</h5>
+              <p class="card-text">Computer engineering involves designing and developing computer systems and their
+                components.</p>
+              <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="images/mechanical.jpg" class="card-img-top" alt="Program 3">
+            <div class="card-body">
+              <h5 class="card-title">Mechanical Engineering</h5>
+              <p class="card-text">Mechanical engineering involves designing and developing mechanical systems and
+                machinery.</p>
+              <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="images/mechatronics.jpg" class="card-img-top" alt="Program 4">
+            <div class="card-body">
+              <h5 class="card-title">Mechatronics Engineering</h5>
+              <p class="card-text">Mechatronics is the combination of mechanical engineering, electronics engineering.</p>
+              <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="images/civil.jpg" class="card-img-top" alt="Program 5">
+            <div class="card-body">
+              <h5 class="card-title">Civil Engineering</h5>
+              <p class="card-text">Civil engineering involves designing and constructing infrastructure and buildings.</p>
+              <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="images/Electrical.png" class="card-img-top" alt="Program 6">
+            <div class="card-body">
+              <h5 class="card-title">Electronics and Electrical Engineering</h5>
+              <p class="card-text">EEE involves designing and developing electrical and electronics systems.</p>
+              <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <div class="footer bg-light">
+    <div class="social-icons d-flex justify-content-center align-items-center column-gap-2 fs-1 ">
+      <span><i class="fa-brands fa-square-facebook"></i></span>
+      <span><i class="fa-brands fa-square-instagram"></i></span>
+      <span><i class="fa-brands fa-square-twitter"></i></span>
+      <span><i class="fa-brands fa-linkedin"></i></span>
+    </div>
+    <div class="d-flex justify-content-center align-items-center">
+      <span><i class="fa-sharp fa-regular fa-copyright "></i></span>
+      <span>
+        <p class="mb-0">&nbsp; 2023-2024 All rights reserved</p>
+      </span>
+    </div>
+  </div>
+
+  <!-- Bootstrap js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

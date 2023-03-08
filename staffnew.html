@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add New Staff</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Dropdown hover required files -->
+  <style>
+    .dropdown-hover:hover .dropdown-menu {
+      display: block;
+    }
+  </style>
+  <script>
+    var dropdownHoverList = [].slice.call(document.querySelectorAll('.dropdown-hover'));
+    dropdownHoverList.map(function (dropdownHoverEl) {
+      dropdownHoverEl.addEventListener('mouseenter', function () {
+        dropdownHoverEl.classList.add('show');
+        dropdownHoverEl.querySelector('.dropdown-menu').classList.add('show');
+      });
+
+      dropdownHoverEl.addEventListener('mouseleave', function () {
+        dropdownHoverEl.classList.remove('show');
+        dropdownHoverEl.querySelector('.dropdown-menu').classList.remove('show');
+      });
+    });
+  </script>
+
+  <!-- Font awesome -->
+  <script src="https://kit.fontawesome.com/a74266306a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md bg-light position-fixed z-3 start-0 end-0 top-0">
+      <div class="container">
+        <div class="navbar-brand" href="#">
+          <h6 class=" text-primary">Add New Staff</h6>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse login " id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item dropdown dropdown-hover">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-hover="dropdown" aria-expanded="false">
+                Login
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="admin.html">Admin</a></li>
+                <li><a class="dropdown-item" href="staff.html">Staff</a></li>
+                <li><a class="dropdown-item" href="student.html">Student</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Code for a staff registration form -->
+  <div class="container margin-top">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div class="card staff-form-box">
+          <div class="card-header">
+            <h4>Staff Registration Form</h4>
+          </div>
+          <div class="card-body">
+            <form>
+              <div class="form-group">
+                <label for="name">Staff Name</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
+              </div>
+              <div class="form-group">
+                <label for="staff-id">Staff ID</label>
+                <input type="text" class="form-control" id="staff-id" name="staff-id" placeholder="Enter your staff ID">
+              </div>
+              <div class="form-group">
+                <label for="dob">Date of Birth</label>
+                <input type="date" class="form-control" id="dob" name="dob">
+              </div>
+              <div class="form-group">
+                <label for="gender">Gender</label>
+                <select class="form-control" id="gender" name="gender">
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="email">Email address</label>
+                <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp"
+                  placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with
+                  anyone else.</small>
+              </div>
+              <div class="form-group">
+                <label for="mobile">Mobile Number</label>
+                <input type="tel" class="form-control" id="mobile" name="mobile" placeholder="Enter your mobile number">
+              </div>
+              <div class="form-group">
+                <label for="password">Choose a Password</label>
+                <input type="password" class="form-control" id="password" name="password"
+                  placeholder="Enter a password">
+              </div>
+              <div class="form-group">
+                <label for="photo">Upload Photo</label>
+                <input type="file" class="form-control-file" id="photo" name="photo">
+              </div>
+              <div class="text-center">
+                <button type="submit" class="btn btn-primary btn-block">Sign Up</button>
+              </div>
+              
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Footer -->
+  <div class="footer bg-light ">
+    <div class="social-icons admin-footer d-flex justify-content-center align-items-center column-gap-2 fs-1 ">
+      <span><i class="fa-brands fa-square-facebook"></i></span>
+      <span><i class="fa-brands fa-square-instagram"></i></span>
+      <span><i class="fa-brands fa-square-twitter"></i></span>
+      <span><i class="fa-brands fa-linkedin"></i></span>
+    </div>
+    <div class="d-flex justify-content-center align-items-center">
+      <span><i class="fa-sharp fa-regular fa-copyright "></i></span>
+      <span>
+        <p class="mb-0">&nbsp; 2023-2024 All rights reserved</p>
+      </span>
+    </div>
+  </div>
+
+  <!-- Bootstrap js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
