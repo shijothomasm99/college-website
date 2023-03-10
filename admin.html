@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Admin Dashboard</title>
+  <title>Admin Login</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
@@ -42,7 +42,7 @@
     <nav class="navbar navbar-expand-md bg-light position-fixed z-3 start-0 end-0 top-0">
       <div class="container">
         <div class="navbar-brand" href="#">
-          <h6 class=" text-primary">Admin Dashboard</h6>
+          <h6 class=" text-primary">Admin Login</h6>
         </div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
           aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,25 +53,11 @@
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="index.html">Home</a>
             </li>
-            <li class="nav-item dropdown dropdown-hover">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-hover="dropdown" aria-expanded="false">
-                Staff
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="staffnew.html">New</a></li>
-                <li><a class="dropdown-item" href="#">Existing</a></li>
-
-              </ul>
+            <li class="nav-item">
+              <a class="nav-link" href="features.html">Features</a>
             </li>
-            <li class="nav-item dropdown dropdown-hover">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-hover="dropdown" aria-expanded="false">
-                Student
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="studentnew.html">New</a></li>
-                <li><a class="dropdown-item" href="#">Existing</a></li>
-
-              </ul>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
             </li>
             <li class="nav-item dropdown dropdown-hover">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-hover="dropdown" aria-expanded="false">
@@ -81,7 +67,6 @@
                 <li><a class="dropdown-item" href="admin.html">Admin</a></li>
                 <li><a class="dropdown-item" href="staff.html">Staff</a></li>
                 <li><a class="dropdown-item" href="student.html">Student</a></li>
-
               </ul>
             </li>
           </ul>
@@ -90,184 +75,52 @@
     </nav>
   </header>
 
-  <!-- Our Team -->
-  <section id="leadership" class="py-5 mt-5">
-    <div class="container">
-      <h2 class="text-center mb-5">Our Leadership Team</h2>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card mb-4">
-            <img src="images/Male.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title text-center">Dr. John Mathew</h5>
-              <p class="card-text text-center">"As the <strong>Principal of Al-Ameen Engineering College</strong>, it
-                gives me pleasure to
-                welcome you to our institution. We provide exceptional education that prepares
-                students for the challenges of the future."</p>
-            </div>
+  <!-- Code for Admin login form -->
+  <div class="container margin-top d-flex justify-content-center align-items-center">
+    <div class="card shadow p-1 mb-2 bg-white rounded w-100 ">
+      <h2 class="card-header text-center">Admin Login</h2>
+      <div class="card-body">
+        <form> 
+          <div class="form-group">
+            <label for="id">Admin ID:</label>
+            <input type="text" class="form-control" id="id" placeholder="Enter your student ID">
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card mb-4">
-            <img src="images/Female.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title text-center">Mrs. Kavya A.</h5>
-              <p class="card-text text-center">"As the <strong> Chairperson of Al-Ameen Educational Trust</strong>, I am
-                proud to support Al-Ameen
-                Engineering College in its mission to provide world-class education and shape the future of our
-                students."</p>
-            </div>
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" class="form-control" id="password" placeholder="Enter your password">
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card mb-4">
-            <img src="images/Male.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title text-center">Mr. Safwan M. P.</h5>
-              <p class="card-text text-center">"As the <strong> Secretary of Al-Ameen Educational Trust</strong>, I am
-                dedicated to ensuring that our
-                students receive the best possible education and have the resources they need to succeed."</p>
-            </div>
+          <div class="text-center mt-3 mb-0">
+            <a href="admindash.html" class="btn btn-primary">Log In</a>
           </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card mb-4">
-            <img src="images/Male.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title text-center">Mr. Akhil K. M.</h5>
-              <p class="card-text text-center">"As the <strong>Managing Trustee of Al-Ameen Educational Trust</strong> ,
-                I am committed to providing a
-                supportive and nurturing environment where our students can thrive and reach their full potential."</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card mb-4">
-            <img src="images/Male.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title text-center">Dr. Joseph P. J.</h5>
-              <p class="card-text text-center">"As the <strong>Head of the Department of Electrical and Electronics
-                  Engineering</strong> , I am
-                passionate about providing our students with the knowledge and skills they need to succeed in their
-                careers."</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card mb-4">
-            <img src="images/Male.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title text-center">Dr. Arjun P. J.</h5>
-              <p class="card-text text-center">"As the <strong>Head of the Department of Electrical and Electronics
-                  Engineering</strong>, I am passionate about providing our students with the knowledge and skills they
-                need to succeed in their careers."</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card mb-4">
-            <img src="images/Male.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title text-center">Dr. Varghese Paul</h5>
-              <p class="card-text text-center">"As the <strong>Head of the Department of Mechatronics
-                  Engineering</strong>, I am dedicated to creating an environment that fosters innovation and
-                creativity, with a strong foundation in the fundamentals of
-                engineering."</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card mb-4">
-            <img src="images/Male.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title text-center">Dr. Rajesh R.</h5>
-              <p class="card-text text-center">"As the <strong>Head of the Department of Civil Engineering</strong>, I
-                am committed to providing our students with a solid foundation in the principles of engineering, while
-                also encouraging creativity and innovation in their work."</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card mb-4">
-            <img src="images/Male.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title text-center">Dr. R. Srinivasan</h5>
-              <p class="card-text text-center">"As the <strong>Head of the Department of Instrumentation
-                  Engineering</strong>, I am dedicated to providing our students with a strong foundation in the
-                fundamentals of engineering, while also encouraging innovation and creativity in their work."</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card mb-4">
-            <img src="images/Male.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title text-center">Dr. Gopakumar G.</h5>
-              <p class="card-text text-center">"As the <strong>Head of the Department of Computer Science and
-                  Engineering</strong>, I am committed to providing our students with a strong foundation in the
-                principles of computer science, while also encouraging them to think creatively and innovatively."</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card mb-4">
-            <img src="images/Male.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title text-center">Dr. Shijo Thomas</h5>
-              <p class="card-text text-center">"As the <strong>Head of the Department of Mechanical
-                  Engineering</strong>, I am dedicated to providing our students with a strong foundation in the
-                fundamentals of engineering, while also encouraging innovation and creativity in their work."</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Code of Google Map section -->
-        <div class="container mt-5 margin-bottom">
-          <div class="row">
-            <div class="col-md-12 height">
-              <div class="card h-100">
-                <div class="card-header">
-                  <h4>Location Map</h4>
-                </div>
-                <div class="card-body p-0">
-                  <div class="w-100 h-100">
-                    <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.202721365829!2d76.3338106147726!3d10.760479292327685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba6ed26a3d1910f%3A0xd9ebbf1f3d51f127!2sAl%20Ameen%20Engineering%20College!5e0!3m2!1sen!2sin!4v1646427732646!5m2!1sen!2sin"
-                      height="100%" width="100%" frameborder="0" style="border:0;" allowfullscreen=""
-                      aria-hidden="false" tabindex="0"></iframe>
-                  </div>
-                  <div class="map-caption text-center mt-3 mb-5">
-                    <h5>Al Ameen Engineering College</h5>
-                    <p class="lead mb-0">Located in Kulappully, Shoranur, Kerala</p>
-                    <p class="text-muted">Come visit us and see our beautiful campus!</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+  
 
 
-        <!-- Footer -->
-        <div class="footer bg-light mt-5">
-          <div class="social-icons admin-footer d-flex justify-content-center align-items-center column-gap-2 fs-1 ">
-            <span><i class="fa-brands fa-square-facebook"></i></span>
-            <span><i class="fa-brands fa-square-instagram"></i></span>
-            <span><i class="fa-brands fa-square-twitter"></i></span>
-            <span><i class="fa-brands fa-linkedin"></i></span>
-          </div>
-          <div class="d-flex justify-content-center align-items-center">
-            <span><i class="fa-sharp fa-regular fa-copyright "></i></span>
-            <span>
-              <p class="mb-0">&nbsp; 2023-2024 All rights reserved</p>
-            </span>
-          </div>
-        </div>
 
-        <!-- Bootstrap js -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-          integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-          crossorigin="anonymous"></script>
+  <!-- Footer -->
+  <div class="footer bg-light ">
+    <div class="social-icons admin-footer d-flex justify-content-center align-items-center column-gap-2 fs-1 ">
+      <span><i class="fa-brands fa-square-facebook"></i></span>
+      <span><i class="fa-brands fa-square-instagram"></i></span>
+      <span><i class="fa-brands fa-square-twitter"></i></span>
+      <span><i class="fa-brands fa-linkedin"></i></span>
+    </div>
+    <div class="d-flex justify-content-center align-items-center">
+      <span><i class="fa-sharp fa-regular fa-copyright "></i></span>
+      <span>
+        <p class="mb-0">&nbsp; 2023-2024 All rights reserved</p>
+      </span>
+    </div>
+  </div>
+
+  <!-- Bootstrap js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
